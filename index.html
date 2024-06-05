@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: url('background2.jpg') no-repeat center center fixed;
+            background: url('background.jpg') no-repeat center center fixed;
             background-size: cover;
             color: #333;
             margin: 0;
@@ -24,6 +24,7 @@
         }
         header h1 {
             margin: 0;
+            font-size: 2em;
         }
         header img {
             border-radius: 50%;
@@ -55,7 +56,7 @@
             border-bottom: 2px solid #0073e6;
             padding-bottom: 10px;
             margin-bottom: 20px;
-            text-align: center; /* Center the text */
+            text-align: center;
         }
         .card-content {
             margin-bottom: 40px;
@@ -69,6 +70,43 @@
             width: 100%;
             bottom: 0;
         }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+            header img {
+                width: 80px;
+                height: 80px;
+            }
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            .card {
+                margin: 10px;
+                padding: 15px;
+            }
+            footer {
+                position: relative;
+                padding: 20px;
+            }
+        }
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.2em;
+            }
+            header img {
+                width: 60px;
+                height: 60px;
+            }
+            .card {
+                padding: 10px;
+            }
+            footer {
+                padding: 15px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -76,7 +114,7 @@
 <header>
     <img src="ehab.jpg" alt="الدكتور إيهاب محمد منير">
     <h1>الدكتور إيهاب محمد منير</h1>
-    <p>جراحة عامة، جراحة بالمنظار و السمنة</p>
+    <p>جراحة عامة، جراحة بالمنظار ومركز السمنة</p>
 </header>
 
 <nav>
@@ -94,14 +132,14 @@
 <div class="card" id="about">
     <h2 class="card-title">معلومات مبسطة</h2>
     <div class="card-content">
-        <p>مرحبًا بكم في قسم المعلومات المبسطة حيث يمكنكم العثور على معلومات مبسطة حول الجراحة العامة وجراحة المنظار و السمنة.</p>
+        <p>مرحبًا بكم في قسم المعلومات المبسطة حيث يمكنكم العثور على معلومات مبسطة حول الجراحة العامة وجراحة المنظار وإدارة السمنة.</p>
     </div>
 </div>
 
 <div class="card" id="clinic-hours">
     <h2 class="card-title">ساعات العمل وحجز المواعيد</h2>
     <div class="card-content">
-        <p>عيادتنا مفتوحة من السبت حتي الخميس من الساعه الثانيه عشر ظهرا حتي نهايه اليوم. يرجى <a href="appointment_registration_link">التسجيل هنا</a> للحصول على موعد.</p>
+        <p>عيادتنا مفتوحة من الاثنين إلى الجمعة، من الساعة 9 صباحًا إلى 5 مساءً. يرجى <a href="appointment_registration_link">التسجيل هنا</a> للحصول على موعد.</p>
     </div>
 </div>
 
